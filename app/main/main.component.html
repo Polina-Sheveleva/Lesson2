@@ -1,0 +1,12 @@
+<h2>Города</h2>
+<input type="string" [(ngModel)] = city.name class="form-control" placeholder="Название города"/><br/>
+<input type="string" [(ngModel)] = city.country class="form-control" placeholder="страна"/><br/>
+<button (click)="saveAndShow(city)"> Сохранить и показать</button>
+<hr>
+<h3>Список городов</h3>
+
+
+<p  *ngFor="let cit of cities">
+    Название:{{cit.name}}<br>
+    Город:{{cit.country}}<br>
+</p>
